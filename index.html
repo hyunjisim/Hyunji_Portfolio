@@ -3,9 +3,346 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hyunji's portfolio</title>
+    <title>Hyunji&#39;s Portfolio</title>
+    <!-- 특수문자는 위처럼 항상 찾아서 바꾸어 줘야함 -->
+    <!-- https://mateam.net/html-escape-characters/ -->
+    <meta name="description" content="주니어 AI 개발자 심현지">
+    <meta name="author" content="Hyunji">
+    <link rel="shortcut icon" href="./images/hyunji.ico" type="images/x-icon">
+    <!-- OG (open Graph Data) -->
+    <meta property="og:title" content="현지의 포트폴리오">
+    <meta property="og:type" content="web site">
+    <meta property="og:url" content="배포후 생성된 URL">
+    <meta property="og:image" content="배포후 생성된 이미지 URL">
+    <!-- JavaScript -->
+    <script src="./js/main.js" defer ></script>
+    <script src="./js/project.js" defer ></script>
+    <script src="./js/section.js" defer ></script>
+    <!-- defer: 다 읽고 나서 자바스크립트 처리 -->
+    <!-- Web Fonts -->
+    <!-- https://noonnu.cc/ -->
+    <link rel="stylesheet" href="./CSS/style.css">
+    
+    <!-- icon -->
+    <!-- https://fontawesome.com/ -->
+    <script src="https://kit.fontawesome.com/f695984820.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    
+    <!-- header -->
+    <header class="header">
+        <!-- BEM -->
+        <div class="header__logo">
+            <img class="header__logo__img" src="./images/hyunji.ico" alt="logo">
+            <h1 class="header__logo__title"><a href="#">Hyunji</a></h1>
+        </div>
+        <nav class="header__nav">
+            <ul class="header__menu">
+                <li><a href="#Home" class="header__menu__item">Home</a></li>
+                <li><a href="#About" class="header__menu__item">About Me</a></li>
+                <li><a href="#Skills"class="header__menu__item">Skills</a></li>
+                <li><a href="#project"class="header__menu__item">Project</a></li>
+                <li><a href="#license"class="header__menu__item">License</a></li>
+                <li><a href="#Contact"class="header__menu__item">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="header__toggle">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </header>
+    <!-- main -->
+    <main>
+        <!-- Home -->
+        <section id="Home" class="section">
+            <div class="home__container">
+                <img class="Home__avatar" src="./images/hyunji.jpg" alt="Hyunji's profile">
+                <h2 class="Home__title">안녕하세요. 주니어 개발자 <br> <strong class="Home__title--strong">심현지</strong>입니다.</h2>
+                <p class="Home__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero qui, optio possimus architecto deserunt dolor unde? Aut, pariatur temporibu</p>
+                <a class="Home__contact" href="#Contact">Contact Me<i class="fa-solid fa-phone"></i></a>
+            </div>
+        </section>
+        <!-- About -->
+        <section id="About" class="section max-container">
+            <h2 class="title">심현지</h2>
+            <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam quia obcaecati, laboriosam optio ad corporis nostrum dolores maxime beatae maiores praesentium. Ipsum, hic. Nam beatae expedita voluptates error odit dolorum.</p>
+            <ul class="majors">
+                <li class="major">
+                    <i class="fa-brands fa-html5 major__icon"></i></a>
+                    <p class="major__title">Front-end</p>
+                    <p>Html, CSS, JavaScript,Node.js, React-Native</p>
+                </li>
+                <li class="major">
+                    <i class="fa-solid fa-mobile major__icon"></i></a>
+                    <p class="major__title">Mobile</p>
+                    <p>~~blalblablalb~yujgghsdalkfgashldjkf</p>
+                </li>
+                <li class="major">
+                    <i class="fa-brands fa-github major__icon"></i></a>
+                    <p class="major__title">Back-end</p>
+                    <p>node.js, FastAPI, Java</p>
+                </li>
+            </ul>
+            <ul class="jobs">
+                <li class="job">
+                    <img class="job__img" src="./images/popo.png" alt="popo logo">
+                    <div>
+                        <p class="job__name">포포 피씨방 노량진 1호점</p>
+                        <p class="job__period">2021 ~ 2024</p>
+                    </div>
+                </li>
+                <li class="job">
+                    <img class="job__img" src="./images/popo.png" alt="popo logo">
+                    <div>
+                        <p class="job__name">포포 피씨방 노량진 1호점</p>
+                        <p class="job__period">2021 ~ 2024</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <!-- Skills -->
+        <section id="Skills" class="section ">
+            <div class="max-container">
+                <h2 class="title">Skills</h2>
+                <p class="description">Programing Skills</p>
+                <div class="skills">
+                    <section class="skills__coding">
+                        <h3 class="skills__title">언어</h3>
+                            <ul>
+                                <li class="bar">
+                                    <div class="bar__metadata">
+                                        <span>HTML</span><span>90%</span>
+                                    </div>
+                                    <div class="bar__bg">
+                                        <div class="bar__value" style="width: 98%;"></div>
+                                    </div>
+                                </li>
+                                <li class="bar">
+                                    <div class="bar__metadata">
+                                        <span>C</span><span>90%</span>
+                                    </div>
+                                    <div class="bar__bg">
+                                        <div class="bar__value" style="width: 98%;">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="bar">
+                                    <div class="bar__metadata">
+                                        <span>Java</span>
+                                        <span>90%</span>
+                                    </div>
+                                    <div class="bar__bg">
+                                        <div class="bar__value" style="width: 98%;">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="bar">
+                                    <div class="bar__metadata">
+                                        <span>Python</span>
+                                        <span>90%</span>
+                                    </div>
+                                    <div class="bar__bg">
+                                        <div class="bar__value" style="width: 98%;">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="bar">
+                                    <div class="bar__metadata">
+                                        <span>CSS</span>
+                                        <span>90%</span>
+                                    </div>
+                                    <div class="bar__bg">
+                                        <div class="bar__value" style="width: 98%;">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="bar">
+                                    <div class="bar__metadata">
+                                        <span>SQL</span>
+                                        <span>90%</span>
+                                    </div>
+                                    <div class="bar__bg">
+                                        <div class="bar__value" style="width: 98%;">
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                    </section>
+
+                    <section class="skills__tools">
+                        <h3 class="skills__title">도구</h3>
+                            <ul>
+                                <li>Visual Stidio Code</li>
+                                <li>Pycharm</li>
+                                <li>Jupyter notebook</li>
+                                <li>Colab</li>
+                                <li>Xcode</li>
+                            </ul>
+                    </section>
+                    <section class="skills__etc">
+                        <h3 class="skills__title">기타</h3>
+                        <ul>
+                            <li>Photo shop</li>
+                            <li>Illustrator</li>
+                            <li>Figma</li>
+                            <li>PPTX</li>
+                            <li>Word</li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+        </section>
+        <!-- Project -->
+        <section id="project" class="section">
+            <div class=" max-container">
+            <h2 class="title">Project</h2>
+            <p class="description">My Projects</p>
+            <ul class="categories">
+                <li>
+                    <button onclick="" class="category category--selected" data-category="all">ALL <span class="category__count">14</span></button>
+                </li>
+                <li>
+                    <button onclick="" class="category" data-category="front-end">front-end <span class="category__count">2</span></button>
+                </li>
+                <li>
+                    <button onclick="" class="category" data-category="mobile">mobile <span class="category__count">3</span></button>
+                </li>
+                <li>
+                    <button onclick="" class="category" data-category="AI">AI <span class="category__count">5</span></button>
+                </li>
+                <li>
+                    <button onclick="" class="category" data-category="UX UI">UX UI <span class="category__count">7</span></button>
+                </li>
+            </ul>
+            <ul class="projects">
+                <li class="project" data-type="front-end">
+                    <a href="#" target="_blank">
+                        <img src="./images/project_1.png" alt="project_안농하농" class="project__img">
+                        <div class="project__meta">
+                            <h3 class="project__title">안농하농 프로젝트</h3>
+                            <p>농촌의 안녕을 기획</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="project" data-type="front-end">
+                    <a href="#" target="_blank">
+                        <img src="./images/project_1.png" alt="project_안농하농" class="project__img">
+                        <div class="project__meta">
+                            <h3 class="project__title">안농하농 프로젝트</h3>
+                            <p>농촌의 안녕을 기획</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="project" data-type="front-end">
+                    <a href="#" target="_blank">
+                        <img src="./images/project_1.png" alt="project_안농하농" class="project__img">
+                        <div class="project__meta">
+                            <h3 class="project__title">안농하농 프로젝트</h3>
+                            <p>농촌의 안녕을 기획</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="project" data-type="UX UI">
+                    <a href="#" target="_blank">
+                        <img src="./images/project_1.png" alt="project_안농하농" class="project__img">
+                        <div class="project__meta">
+                            <h3 class="project__title">안농하농 프로젝트</h3>
+                            <p>농촌의 안녕을 기획</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="project" data-type="UX UI">
+                    <a href="#" target="_blank">
+                        <img src="./images/project_1.png" alt="project_안농하농" class="project__img">
+                        <div class="project__meta">
+                            <h3 class="project__title">안농하농 프로젝트</h3>
+                            <p>농촌의 안녕을 기획</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="project" data-type="UX UI">
+                    <a href="#" target="_blank">
+                        <img src="./images/project_1.png" alt="project_안농하농" class="project__img">
+                        <div class="project__meta">
+                            <h3 class="project__title">안농하농 프로젝트</h3>
+                            <p>농촌의 안녕을 기획</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="project" data-type="UX UI">
+                    <a href="#" target="_blank">
+                        <img src="./images/project_1.png" alt="project_안농하농" class="project__img">
+                        <div class="project__meta">
+                            <h3 class="project__title">안농하농 프로젝트</h3>
+                            <p>농촌의 안녕을 기획</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="project" data-type="AI">
+                    <a href="#" target="_blank">
+                        <img src="./images/project_1.png" alt="project_안농하농" class="project__img">
+                        <div class="project__meta">
+                            <h3 class="project__title">안농하농 프로젝트</h3>
+                            <p>농촌의 안녕을 기획</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        </section>
+        <!-- License -->
+        <section id="license"class="section max-container">
+            <h2 class="title">License</h2>
+            <p class="description">국가 기술 자격증</p>
+            <ul class="licenses">
+                <li class="license">
+                    <img class="license__img" src="./images/project_1.png" alt="">
+                    <div class="license__balloon">
+                    <p><a href="#" class="license__in__balloon">발행처:흔냐냐</a></p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit atque quos suscipit alias! Magni architecto molestias, ipsum vero nam natus quia, corporis fuga rem corrupti sunt eum voluptates, et impedit.
+                    </p>
+                </div>
+                </li>
+                <li class="license">
+                    <img class="license__img" src="./images/project_1.png" alt="">
+                    <div class="license__balloon">
+                    <p><a href="#" class="license__in__balloon">발행처:흔냐냐</a></p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit atque quos suscipit alias! Magni architecto molestias, ipsum vero nam natus quia, corporis fuga rem corrupti sunt eum voluptates, et impedit.
+                    </p>
+                </div>
+                </li>
+                <li class="license">
+                    <img class="license__img" src="./images/project_1.png" alt="">
+                    <div class="license__balloon">
+                    <p><a href="#" class="license__in__balloon">발행처:흔냐냐</a></p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit atque quos suscipit alias! Magni architecto molestias, ipsum vero nam natus quia, corporis fuga rem corrupti sunt eum voluptates, et impedit.
+                    </p>
+                </div>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Top up -->
+        <aside>
+            <a class="top-up" href="#Home" title="위로">
+                <i class="fa-solid fa-arrow-up"></i>
+            </a>
+        </aside>
+    </main>
+    <!-- footer -->
+    <footer id="Contact" class="section">
+        <div class="max-container">
+        <h2 class="title">contact</h2>
+        <p>tlaguswl3461@gmail.com <i class="fa-regular fa-envelope"></i> </p>
+        <p>010-6294-3460<i class="fa-solid fa-phone-flip"></i></p>
+        <ul class="contact__links">
+            <li><a class="contact__link" href="https://github.com/hyunjisim" target="_blank" title="Git Hub">Git Hub <i class="fa-brands fa-github"></i></a></li>
+            <li><a class="contact__link" href=""></a></li>
+        </ul>
+        <p class="description">ⓒHyunji - All rights reserved</p>
+        </div>
+    </footer>
 </body>
 </html>
+<!--  -->
